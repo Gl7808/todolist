@@ -1,3 +1,5 @@
+import {FiltereValueType} from "../App";
+
 type tasksType = {
     title : string
     id: number
@@ -7,6 +9,7 @@ type PropsType = {
     tasks: Array<tasksType>
     titile : string
     removeTask: (taskId: number) => void
+    changerFilter: (value: FiltereValueType) => void
 }
 export const Todolist = (props: PropsType) => {
     return (
@@ -28,9 +31,10 @@ export const Todolist = (props: PropsType) => {
                 );
             })}
             <div>
-                <button>All</button>
-                <button>Active</button>
-                <button>Completed</button>
+                <button onClick={()=>{props.changerFilter('all')}}>All</button>
+                <button onClick={()=>{props.changerFilter('active')}}>Active</button>
+                <button onClick={()=>{props.changerFilter('completed')}}>Completed</button>
+
             </div>
         </div>
     );
