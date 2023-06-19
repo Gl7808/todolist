@@ -1,0 +1,77 @@
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+h3{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.addItemListInput{
+    border-radius: 3px;
+    border:1px solid #101010;
+    background: #282828;
+    height: 25px;
+    width: 100%;
+    color:#fff;
+    font-weight: bold;
+}
+input.addItemListInput:focus {
+    outline: none;
+    background: color-mix(in srgb, #282828 90%, white);
+}
+.addTask_btn{
+    border-radius: 3px;
+    border:none;
+    background: #282828;
+    color:#fff;
+    width: 30px;
+    height: 29px;
+    border:1px solid #101010;
+}
+.addTask_btn:hover{
+    background: color-mix(in srgb, #282828 90%, white);
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 5px 0 5px 0;
+
+}
+ul{
+    padding-inline-start: 0px;
+}
+
+.filteredBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.filteredBlock button{
+    border-radius: 3px;
+    border: 1px solid #101010;
+    background: #282828;
+    color:#fff;
+    width: 100%;
+    text-transform: lowercase;
+}
+.removeTask_btn {
+    border-radius: 3px;
+    border: 1px solid #101010;
+    background: #282828;
+    color:#fff;
+}
